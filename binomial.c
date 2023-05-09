@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 int fat(int f){
     if (f<=1)
         return 1;
@@ -32,11 +33,11 @@ int main(){
     scanf("%d", &n);
     printf("digite o p (taxa de sucesso) em valor relativo: ");
     scanf("%f", &p);
-    printf("digite o x  (quantidade de sucesso): ");
+    printf("digite o x (quantidade de sucesso): ");
     scanf("%d", &x);
     resultado=binominal(n,p,x)*100;
     racumulativo=acumulativo(n,p,x)*100;
-    printf("o binomio e: %f \n", resultado);
-    printf("o binomio acumulativo e: %f \n", racumulativo);
+    printf("o binomio e: %.2f%% \n", resultado);
+    printf("o binomio acumulativo e: %.2f%% \n", racumulativo);
     return 0;
 }
