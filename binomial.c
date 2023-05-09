@@ -29,15 +29,15 @@ float acumulativo(int n, float p, int x){
 int main(){
     int n, x;
     float p, resultado, racumulativo;
-    printf("digite o n (quantidade de testes): ");
+    printf("Digite o n (quantidade de testes): ");
     scanf("%d", &n);
-    printf("digite o p (taxa de sucesso) em valor relativo: ");
+    printf("Digite o p (taxa de sucesso) em valor relativo: ");
     scanf("%f", &p);
-    printf("digite o x (quantidade de sucesso): ");
+    printf("Digite o x (quantidade de sucesso): ");
     scanf("%d", &x);
     resultado=binominal(n,p,x)*100;
     racumulativo=acumulativo(n,p,x)*100;
-    printf("o binomio e: %.2f%% \n", resultado);
-    printf("o binomio acumulativo e: %.2f%% \n", racumulativo);
+    printf("O binomio e: %.2f%% \n", resultado);
+    printf("O binomio acumulativo e: %.2f%% \n", racumulativo);
     return 0;
 }
